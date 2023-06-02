@@ -474,7 +474,7 @@
   font-size: 16px;
   line-height: 20px;
   margin-top: 16px;
-  margin-bottom: none;
+  margin-bottom: 0px;
 }
 
 .footer__column-heading {
