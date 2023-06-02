@@ -8,6 +8,9 @@
   line-height: 20px;
   margin: auto;
 }
+.content {
+  padding: 0px;
+}
 
 .header {
   display: flex;
@@ -46,6 +49,9 @@
   color: #000000;
   text-decoration: none;
   font-weight: bold;
+}
+.nav__link:hover {
+  color: #1f69c9;
 }
 
 .header__title {
@@ -86,6 +92,9 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+.header__link:hover {
+  color: #1f69c9;
 }
 
 .header__address {
@@ -160,6 +169,9 @@
 .events__more {
   color: #2f80ed;
   text-decoration: none;
+}
+.events__more:hover {
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -374,6 +386,8 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  gap: 120px;
 }
 
 .about__title {
@@ -382,6 +396,11 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-basis: auto;
 }
 
 .about__content {
@@ -389,6 +408,16 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-basis: auto;
+  z-index: 1;
+}
+.about__paragraph {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
 }
 
 .about__circle {
@@ -396,22 +425,42 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  left: -91px;
+  top: -121px;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  padding: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__columns {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 }
 
 .footer__column_content_hours {
+  color: #fff;
 }
 
 .footer__column_content_social {
+  color: #fff;
 }
 
 .footer__logo {
+  display: flex;
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
@@ -422,9 +471,14 @@
 }
 
 .footer__list-item {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 16px;
+  margin-bottom: none;
 }
 
 .footer__column-heading {
+  gap: 20px;
 }
 
 .footer__column-link {
@@ -433,9 +487,19 @@
   line-height: 20px;
   text-decoration: none;
 }
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
 
 .footer__social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 60px;
 }

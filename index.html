@@ -23,19 +23,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" a href="#staff-id">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" a href="#events-id">Events</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" a href="#membership-id">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" a href="#about-id">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" a href="#footer-id">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -61,7 +61,7 @@
       </div>
 
       <main class="content">
-        <section class="events">
+        <section id="events-id" class="events">
           <!-- --------------------------------------------------------------- -->
           <!--              Don't uncomment until project stage 2              -->
           <!-- --------------------------------------------------------------- -->
@@ -143,7 +143,7 @@
             </div>
           </div>
         </section>
-        <section class="staff">
+        <section id="staff-id" class="staff">
           <!--        Don't uncomment until the final project stage            -->
           <!-- --------------------------------------------------------------- -->
           <h2 class="staff__title">Staff picks</h2>
@@ -219,7 +219,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section id="membership-id" class="membership">
           <!-- --------------------------------------------------------------- -->
           <!--         Don't uncomment until the final project stage           -->
           <!-- --------------------------------------------------------------- -->
@@ -278,7 +278,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section id="about-id" class="about">
           <!-- --------------------------------------------------------------- -->
           <!--          Don't uncomment until the final project stage          -->
           <!-- --------------------------------------------------------------- -->
@@ -305,7 +305,46 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
+
+      <footer id="footer-id" class="footer">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h3 class="footer__logo"><img src="images/logo_white.png" /></h3>
+          </div>
+          <div class="footer_container">
+            <div class="footer__column_content_hours">
+              <h4 class="footer__column_heading">Hours</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+                <li class="footer__list-item">Weekends: 10am - 6pm</li>
+              </ul>
+            </div>
+            <div class="footer__column_content_social">
+              <h4 class="footer__column-heading">Social Media</h4>
+              <ul class="footer__list">
+                <a class="footer__column-link" href="#">
+                  <li class="footer__list-item">
+                    <img
+                      class="footer__social-icon"
+                      src="images/facebook_white.svg"
+                    />Facebook
+                  </li>
+                </a>
+                <a class="footer__column-link" href="#">
+                  <li class="footer__list-item">
+                    <img
+                      class="footer__social-icon"
+                      src="images/instagram_white.svg"
+                    />Instagram
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>© 2023 Jack Scanlan</p>
+        </div>
         <!-- ----------------------------------------------------------------- -->
         <!--          Don't uncomment until the final project stage            -->
         <!-- ----------------------------------------------------------------- -->
